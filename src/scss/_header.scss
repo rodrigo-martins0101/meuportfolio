@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville|Open+Sans:700');
+@import "colors";
+
+.container
+{
+    @include grid-row-size(100%);
+}
+
+#header
+{
+    @include grid-column(12);
+    height: 660px;
+    background-color:  $color-first;
+    #title
+    {
+        @include grid-column(12);
+        text-align: center;
+        margin-top:20%;
+    }
+    h1
+    {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 50px;
+        text-transform: uppercase;
+        color: $color-third;
+        line-height: 45px;
+        span
+        {
+            color: $color-second;
+        }
+    }
+    p
+    {
+
+        font-family: 'Libre Baskerville', serif;
+        color: $color-third;
+        letter-spacing: 2px;
+    }
+}
