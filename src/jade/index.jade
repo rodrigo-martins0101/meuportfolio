@@ -2,10 +2,24 @@ html
     head
     title Rodrigo Martins | Desenvolvedor Web
     link(rel="stylesheet",href="css/app.css")
+    link(rel="stylesheet",href="css/font-awesome/css/font-awesome.min.css")
     body
+        video#backvideo(autoplay)
+            source(src="video/Code.mov")
+
         div.container
             section#header
+                nav#menu-header
+                    ul
+                        li: a: i.fa.fa-bars.fa-2x
                 div#title
                     h1 Rodrigo
                         span Martins
                     p Desenvolvedor Web | Wordpress
+                section#social-header
+                    ul
+                        li: a: i.fa.fa-facebook.fa-1x
+                        li: a: i.fa.fa-twitter.fa-1x
+                        li: a: i.fa.fa-linkedin.fa-1x
+                        li: a: i.fa.fa-github.fa-1x
+        script(type="text/javascript",src="js/app.js")
